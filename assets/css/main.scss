@@ -1,0 +1,55 @@
+---
+---
+
+$theme-colors: (
+    primary: #165e83,
+    secondary: #f7f3df,
+    success: #0094c8,
+    danger: #c70092,
+    warning: #92c700,
+    info: #0094c8,
+    light: #ebebeb,
+    dark: #004b66,
+    muted: #f7f3df
+  );
+
+$body-bg: var(--white);
+$body-color: var(--dark);
+
+@import 'bootstrap/bootstrap';
+
+h1 {
+    padding: 0.5rem;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    a {
+        display: block;
+        padding: 1rem;
+        color: var(--secondary);
+        background-color: var(--primary);
+    }
+    a:hover {
+        color: var(--primary);
+        background-color: var(--light);
+    }
+}
+
+.navbar {
+    padding: 0;
+}
+.navbar-nav {
+    a {
+        display: block;
+        padding: 1rem;
+        color: var(--secondary);
+        background-color: var(--primary);
+    }
+    a:hover {
+        color: var(--primary);
+        background-color: var(--secondary);
+    }
+}
