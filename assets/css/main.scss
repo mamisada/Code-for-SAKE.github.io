@@ -101,3 +101,9 @@ a  {
         overflow: auto;
     }
 }
+
+#projects {
+    .card-deck .card {
+        margin: 0 1px;
+    }
+}
