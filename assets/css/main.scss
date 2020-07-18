@@ -10,7 +10,8 @@ $theme-colors: (
     info: #0094c8,
     light: #ebebeb,
     dark: #004b66,
-    muted: #f7f3df
+    muted: #f7f3df,
+    link: #0094c8,
   );
 
 $body-bg: var(--white);
@@ -20,6 +21,13 @@ $body-color: var(--dark);
 
 h1 {
     padding: 0.5rem;
+}
+
+a  {
+    color: var(--link);
+    &:hover {
+        color: var(--dark);
+    }
 }
 
 .link-list {
