@@ -53,3 +53,43 @@ h1 {
         background-color: var(--secondary);
     }
 }
+
+.full-width-image {
+    width: 100vw;
+    position: relative;
+    left: 50%;  
+    margin-left: -50vw;
+ }
+ 
+ .full-width-image img {
+   width: 100%;
+ }
+
+#main {
+    position: relative;
+    .catch-copy {
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        color: var(--white);
+        background-color: var(--dark);
+    }
+    .body-copy {
+        position: absolute;
+        bottom: 10%;
+        width: 80%;
+        margin-left: 10%;
+        display: block;
+        text-align: center;
+        color: var(--dark);
+        background-color: var(--muted);
+    }
+}
+
+#news {
+    ul {
+        height: 200px;
+        overflow: auto;
+    }
+}

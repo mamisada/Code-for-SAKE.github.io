@@ -14,7 +14,7 @@
 
   <body>
     <div class='wrap'>
-      <header class="header mb-5">
+      <header class="header">
           <nav class="navbar navbar-expand-lg bg-primary text-secondary">
             <h1>Code for SAKE</h1>
             <button class="navbar-toggler collapsed" type="button"
@@ -39,55 +39,135 @@
           </nav>
       </header>
       <div class="container">
-        <div>
-          <h2 class='mb-5 text-center'>日本酒が危ない</h2>
-          <p>日本酒のオープンデータを全国の酒蔵と一緒につくり、日本酒の文化や技術を後世に残しながら、
-            酒蔵と飲兵衛の顔が見える関係性をネット上でつくりたい！と集まった人たちの活動</p>
-        </div>
-        <section id="news">
-          <h2 class='mb-5 text-center'>NEWS</h2>
 
+        <section id="main" class="full-width-image mb-5">
+          <img src="assets/img/sake.png" class="img-fluid d-sm-none d-md-block" alt="日本酒">
+          <img src="assets/img/sake_sp.png" class="img-fluid d-sm-block d-md-none" alt="日本酒">
+          <h2 class="catch-copy">日本酒が危ない</h2>
+          <p class="body-copy">日本酒のオープンデータを全国の酒蔵と一緒につくり、日本酒の文化や技術を後世に残しながら、
+            酒蔵と飲兵衛の顔が見える関係性をネット上でつくりたい！と集まった人たちの活動</p>
+        </section>
+        
+        <section id="news" class="mb-5">
+          <h2 class='text-center'>NEWS</h2>
+          <div class="card">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">2020.07.18 ソーシャルハックデーで活動しました。</li>
+              <li class="list-group-item">2020.06.16 シビックテックライブでCode for SAKEのプロジェクト紹介をさせていただきました。</li>
+              <li class="list-group-item">2020.05.23 ソーシャルハックデーで活動しました。</li>
+              <li class="list-group-item">2020.05.22 Code for SAKE online hackathon #1を開催しました。</li>
+              <li class="list-group-item">2020.05.04 オンラインゆる飲み会をしました。</li>
+              <li class="list-group-item">2020.02.22 ソーシャルハックデーで活動しました。</li>
+            </ul>
+          </div>
         </section>
         <section id="projects">
           <h2 class='mb-5 text-center'>Projects</h2>
-          <div class="row">
+          <div class="card-deck">
             <div class="p-1 col-md-4 mx-auto">
               <div class="card">
-                <img class="card-img-top" src="..." alt="Project1">
+                <img class="card-img-top" src="assets/img/spreadsheet.png" alt="日本酒オープンデータ">
                 <div class="card-body">
-                  <h5 class="card-title">Project1</h5>
-                  <p class="card-text">Project1</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">日本酒オープンデータを作る</h5>
+                  <p class="card-text">酒蔵の情報をオープンに整理して、ITでサポートするための基盤を作ります。</p>
+                  <a href="#" class="btn btn-primary disabled">GoogleSpreadSheet</a>
                 </div>
               </div>
             </div>
             <div class="p-1 col-md-4 mx-auto">
               <div class="card">
-                <img class="card-img-top" src="..." alt="Project2">
+                <img class="card-img-top" src="assets/img/tastingmap.png" alt="SAKEChart.js">
                 <div class="card-body">
-                  <h5 class="card-title">Project2</h5>
-                  <p class="card-text">Project2</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">SAKEChart.js</h5>
+                  <p class="card-text">日本酒のビジュアライズに特化したチャート生成ライブラリを開発します。</p>
+                  <a href="https://github.com/Code-for-SAKE/SakeChart.js" class="btn btn-primary">Go to GitHub</a>
                 </div>
               </div>
             </div>
             <div class="p-1 col-md-4 mx-auto">
               <div class="card">
-                <img class="card-img-top" src="..." alt="Project3">
+                <img class="card-img-top" src="assets/img/sakeviewer.png" alt="SAKEViewer">
                 <div class="card-body">
-                  <h5 class="card-title">Project3</h5>
-                  <p class="card-text">Project3</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">SAKEViewer</h5>
+                  <p class="card-text">日本酒データの3Dビジュアライズツールをpythonで開発しました。</p>
+                  <a href="https://github.com/Code-for-SAKE/SakeViewer" class="btn btn-primary">Go to GitHub</a>
                 </div>
               </div>
             </div>
             <div class="p-1 col-md-4 mx-auto">
               <div class="card">
-                <img class="card-img-top" src="..." alt="Project4">
+                <img class="card-img-top" src="..." alt="試飲イキタイ">
                 <div class="card-body">
-                  <h5 class="card-title">Project4</h5>
-                  <p class="card-text">Project4</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">お猪口でサブスク『試飲イキタイ』</h5>
+                  <p class="card-text">提携する酒蔵や酒屋・飲食店などで日本酒試飲し放題のサブスクリプションサービスを開発します。
+                    </p>
+                  <a href="#" class="btn btn-primary disabled">構想中</a>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 col-md-4 mx-auto">
+              <div class="card">
+                <img class="card-img-top" src="..." alt="全部ノミタイ">
+                <div class="card-body">
+                  <h5 class="card-title">お猪口大の日本酒詰め合わせセット『全部ノミタイ』</h5>
+                  <p class="card-text">日本酒は種類が豊富な上に毎年新しいものも出てくる。それを４号瓶で全て飲むのは無理。<br>
+                    お猪口大ならなんとか飲み切れる！？<br>
+                    そんな野望をかなえるサービスを開発します。</p>
+                  <a href="#" class="btn btn-primary disabled">構想中</a>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 col-md-4 mx-auto">
+              <div class="card">
+                <img class="card-img-top" src="assets/img/zoom.png" alt="オンライン酒蔵見学＆飲み会">
+                <div class="card-body">
+                  <h5 class="card-title">オンライン酒蔵見学＆飲み会</h5>
+                  <p class="card-text">普段は行けない遠くの酒蔵にもオンラインなら見学できます。<br>
+                    酒蔵のお酒を取り寄せて、飲みながら見るオンライン酒蔵見学は新しい生活様式になるのか？</p>
+                  <a href="#" class="btn btn-primary disabled">随時開催</a>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 col-md-4 mx-auto">
+              <div class="card">
+                <img class="card-img-top" src="assets/img/mukaihara.png" alt="酒蔵のWebサイト改善ハッカソン">
+                <div class="card-body">
+                  <h5 class="card-title">酒蔵のWebサイト改善ハッカソン</h5>
+                  <p class="card-text">美味しい日本酒を作っている酒蔵もWebサイトはいまいちだったりします。<br>
+                    Webサイトの改善でより多くの方に日本酒の美味しさを知ってもらうための活動です。<br>
+                    オープンデータにする基盤を提供することでちゃんと更新されるオープンデータ作りに貢献します。</p>
+                  <a href="https://github.com/Code-for-SAKE/mukai-zakura" class="btn btn-primary">第一回の成果</a>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 col-md-4 mx-auto">
+              <div class="card">
+                <img class="card-img-top" src="..." alt="日本酒の味、香りのレビュー機能">
+                <div class="card-body">
+                  <h5 class="card-title">日本酒の味、香りのレビュー機能</h5>
+                  <p class="card-text">星数だけでは伝わらないし、違いはあるけどどちらも美味しい。それを伝えられるレビュー機能を開発します。</p>
+                  <a href="#" class="btn btn-primary disabled">構想中</a>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 col-md-4 mx-auto">
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Code for SAKEオリジナル酒づくり">
+                <div class="card-body">
+                  <h5 class="card-title">Code for SAKEオリジナル酒づくり</h5>
+                  <p class="card-text">酒造りを学びながらオリジナルの酒を作ります。<br>
+                    被災等の合った地域の酒蔵と積極的に進めたいと思っています。</p>
+                  <a href="#" class="btn btn-primary disabled">構想中</a>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 col-md-4 mx-auto">
+              <div class="card">
+                <img class="card-img-top" src="..." alt="コミュニケーションサイト">
+                <div class="card-body">
+                  <h5 class="card-title">酒蔵それぞれのファンを作る コミュニケーションサイト</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary disabled">構想中</a>
                 </div>
               </div>
             </div>
@@ -95,6 +175,7 @@
         </section>
         <section id="aboutus">
           <h2 class='mb-5 text-center'>About Us</h2>
+          
         </section>
         <section id="link">
           <h2 class='mb-5 text-center'>Link</h2>
